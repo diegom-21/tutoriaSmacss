@@ -1,0 +1,39 @@
+.navigation {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .navigation__item {
+        position: relative;
+        margin-right: 20px;
+        text-decoration: none;
+        color: $color-fondo;
+        transition: color 0.3s;
+
+        &--active {
+            font-weight: bold;
+        }
+
+        &:hover {
+            color: lighten($color-primario, 10%);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $color-primario;
+            transition: width 0.3s ease;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+// Estilos para el encabezado
+.header {
+    background-color: $color-primario;
+    color: $color-fondo;
+    padding: 20px;
+    text-align: center;
+}
+
+// Estilos para la navegación
+.navigation {
+    ul {
+        font-size: 25px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navigation__item {
+        display: inline-block;
+        margin-right: 20px;
+        text-decoration: none;
+        color: $color-fondo;
+
+        &--active {
+            font-weight: bold;
+        }
+    }
+}
+
+// Estilos para el contenido principal
+.content_index{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+// Estilos para los productos
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-card {
+    background-color: $color-fondo;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: $color-primario;
+        color: $color-fondo;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+}

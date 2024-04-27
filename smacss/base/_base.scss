@@ -1,0 +1,10 @@
+// Definimos las variables de colores
+$color-primario: #13263a; // Azul
+$color-secundario: #28a745; // Verde
+$color-texto: #333; // Gris oscuro
+$color-fondo: #fff; // Blanco
+$fuente: "Roboto", sans-serif;
+
+*{
+    font-family: $fuente;
+}
